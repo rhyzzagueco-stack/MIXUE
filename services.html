@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixue Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/mixue.png" alt="Mixue Logo">
+                <h2>Mixue</h2>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Menu</a></li>
+                <li><a href="contact.html">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu-section">
+            <h1 class="section-title">Our Menu</h1>
+            <p class="section-subtitle">Choose your favorite Mixue treats with different flavors!</p>
+
+            <div class="search-filter">
+                <input type="text" id="searchProduct" placeholder="Search product..." autocomplete="off">
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="icecream">Ice Cream</option>
+                    <option value="drink">Drinks</option>
+                    <option value="tea">Tea</option>
+                </select>
+            </div>
+
+            <div class="products">
+
+                <div class="product-card" data-category="icecream" data-name="Ice Cream Cone" data-price="39">
+                    <img src="images/icecream.jpg" alt="Ice Cream">
+                    <div class="product-info">
+                        <h3>Ice Cream Cone</h3>
+                        <span class="category-badge">Ice Cream</span>
+                        <p class="price">₱39</p>
+                        <div class="flavors">
+                            <p>Available Flavors:</p>
+                            <div class="flavor-tags">
+                                <span class="flavor-tag">Vanilla</span>
+                                <span class="flavor-tag">Chocolate</span>
+                                <span class="flavor-tag">Strawberry</span>
+                                <span class="flavor-tag">Matcha</span>
+                                <span class="flavor-tag">Cookies & Cream</span>
+                                <span class="flavor-tag">Mango</span>
+                            </div>
+                        </div>
+                        <button class="add-order-btn" data-product="Ice Cream Cone" data-price="39" data-flavors='["Vanilla","Chocolate","Strawberry","Matcha","Cookies & Cream","Mango"]'>Add to Order</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="icecream" data-name="Soft Serve Twist" data-price="49">
+                    <img src="images/soft.jpg" alt="Soft Serve">
+                    <div class="product-info">
+                        <h3>Soft Serve Twist</h3>
+                        <span class="category-badge">Ice Cream</span>
+                        <p class="price">₱49</p>
+                        <div class="flavors">
+                            <p>Available Flavors:</p>
+                            <div class="flavor-tags">
+                                <span class="flavor-tag">Vanilla-Choco Twist</span>
+                                <span class="flavor-tag">Strawberry-Vanilla</span>
+                                <span class="flavor-tag">Matcha-Vanilla</span>
+                                <span class="flavor-tag">Mango-Vanilla</span>
+                                <span class="flavor-tag">Choco-Matcha</span>
+                            </div>
+                        </div>
+                        <button class="add-order-btn" data-product="Soft Serve Twist" data-price="49" data-flavors='["Vanilla-Choco Twist","Strawberry-Vanilla","Matcha-Vanilla","Mango-Vanilla","Choco-Matcha"]'>Add to Order</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="icecream" data-name="Chocolate Sundae" data-price="59">
+                    <img src="images/sundae.jpg" alt="Sundae">
+                    <div class="product-info">
+                        <h3>Sundae</h3>
+                        <span class="category-badge">Ice Cream</span>
+                        <p class="price">₱59</p>
+                        <div class="flavors">
+                            <p>Available Flavors:</p>
+                            <div class="flavor-tags">
+                                <span class="flavor-tag">Chocolate</span>
+                                <span class="flavor-tag">Strawberry</span>
+                                <span class="flavor-tag">Caramel</span>
+                                <span class="flavor-tag">Blueberry</span>
+                                <span class="flavor-tag">Oreo</span>
+                            </div>
+                        </div>
+                        <button class="add-order-btn" data-product="Chocolate Sundae" data-price="59" data-flavors='["Chocolate","Strawberry","Caramel","Blueberry","Oreo"]'>Add to Order</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="drink" data-name="Fresh Lemonade" data-price="49">
+                    <img src="images/lemon.jpg" alt="Lemonade">
+                    <div class="product-info">
+                        <h3>Fresh Lemonade</h3>
+                        <span class="category-badge">Drink</span>
+                        <p class="price">₱49</p>
+                        <div class="flavors">
+                            <p>Available Flavors:</p>
+                            <div class="flavor-tags">
+                                <span class="flavor-tag">Original</span>
+                                <span class="flavor-tag">Strawberry</span>
+                                <span class="flavor-tag">Blueberry</span>
+                                <span class="flavor-tag">Peach</span>
+                                <span class="flavor-tag">Lychee</span>
+                                <span class="flavor-tag">Green Apple</span>
+                            </div>
+                        </div>
+                        <button class="add-order-btn" data-product="Fresh Lemonade" data-price="49" data-flavors='["Original","Strawberry","Blueberry","Peach","Lychee","Green Apple"]'>Add to Order</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="drink" data-name="Fruit Tea" data-price="55">
+                    <img src="images/tea.jpg" alt="Fruit Tea">
+                    <div class="product-info">
+                        <h3>Fruit Tea Series</h3>
+                        <span class="category-badge">Drink</span>
+                        <p class="price">₱55</p>
+                        <div class="flavors">
+                            <p>Available Flavors:</p>
+                            <div class="flavor-tags">
+                                <span class="flavor-tag">Passion Fruit</span>
+                                <span class="flavor-tag">Peach</span>
+                                <span class="flavor-tag">Mango</span>
+                                <span class="flavor-tag">Lychee Rose</span>
+                                <span class="flavor-tag">Kiwi</span>
+                                <span class="flavor-tag">Mixed Berries</span>
+                            </div>
+                        </div>
+                        <button class="add-order-btn" data-product="Fruit Tea" data-price="55" data-flavors='["Passion Fruit","Peach","Mango","Lychee Rose","Kiwi","Mixed Berries"]'>Add to Order</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="tea" data-name="Milk Tea" data-price="59">
+                    <img src="images/milktea.jpg" alt="Milk Tea">
+                    <div class="product-info">
+                        <h3>Milk Tea Series</h3>
+                        <span class="category-badge">Tea</span>
+                        <p class="price">₱59</p>
+                        <div class="flavors">
+                            <p>Available Flavors:</p>
+                            <div class="flavor-tags">
+                                <span class="flavor-tag">Classic Milk Tea</span>
+                                <span class="flavor-tag">Okinawa</span>
+                                <span class="flavor-tag">Taro</span>
+                                <span class="flavor-tag">Matcha</span>
+                                <span class="flavor-tag">Wintermelon</span>
+                                <span class="flavor-tag">Brown Sugar</span>
+                                <span class="flavor-tag">Hokkaido</span>
+                            </div>
+                        </div>
+                        <button class="add-order-btn" data-product="Milk Tea" data-price="59" data-flavors='["Classic Milk Tea","Okinawa","Taro","Matcha","Wintermelon","Brown Sugar","Hokkaido"]'>Add to Order</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="tea" data-name="Cheese Tea" data-price="69">
+                    <img src="images/cheese.jpg" alt="Cheese Tea">
+                    <div class="product-info">
+                        <h3>Cheese Tea</h3>
+                        <span class="category-badge">Tea</span>
+                        <p class="price">₱69</p>
+                        <div class="flavors">
+                            <p>Available Flavors:</p>
+                            <div class="flavor-tags">
+                                <span class="flavor-tag">Jasmine Green Tea</span>
+                                <span class="flavor-tag">Black Tea</span>
+                                <span class="flavor-tag">Oolong Tea</span>
+                                <span class="flavor-tag">Strawberry</span>
+                                <span class="flavor-tag">Mango</span>
+                            </div>
+                        </div>
+                        <button class="add-order-btn" data-product="Cheese Tea" data-price="69" data-flavors='["Jasmine Green Tea","Black Tea","Oolong Tea","Strawberry","Mango"]'>Add to Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-list-section">
+                <h2>Your Order List</h2>
+                <ul id="orderList"></ul>
+            </div>
+        </section>
+    </main>
+
+    <div id="flavorModal" class="flavor-modal">
+        <div class="flavor-modal-content">
+            <div class="flavor-modal-header">
+                <h3>Select Your Flavor</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="flavor-modal-body">
+                <p id="modalProductName"></p>
+                <div class="flavor-options" id="flavorOptions"></div>
+                <div class="modal-price" id="modalPrice"></div>
+            </div>
+            <div class="flavor-modal-footer">
+                <button class="btn-cancel" id="cancelFlavorBtn">Cancel</button>
+                <button class="btn-confirm" id="confirmFlavorBtn">Add to Order</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Mixue Order and Reservation Management System</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
